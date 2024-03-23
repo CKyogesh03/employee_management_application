@@ -1,0 +1,18 @@
+note:
+functions are declared but executed only if any event occurs. like submit event.
+HTTP method name must be in uppercase.
+-------> do fetch operations inside try catch block
+after submit event then only fetch api is executed with the help of js function.
+
+js fetching function is executed after submit. fetch() api is executed inside fetching function.
+
+-async, await not needed if fecthing and other operations completed with chaining.
+-async, await needed if fecthing and other operations done as seperate statements. eg: fetch(),then(),then(),finally()
+
+1. CREATE
+
+->fill the form
+when submitting:
+->prevent default
+->store all data into one object. it will become the payload for request.
+->

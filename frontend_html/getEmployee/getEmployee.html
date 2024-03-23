@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <script src="getEmployee.js" defer></script>
+</head>
+<body>
+    <h1>Employee Details</h1>
+
+    <form id="employeeForm">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" required>
+        <button type="button" onclick="fetchEmployeeDetails()">Fetch Details</button>
+    </form>
+
+    <div id="employeeDetails">
+        <!-- Display employee details here -->
+    </div>
+</body>
+</html>
