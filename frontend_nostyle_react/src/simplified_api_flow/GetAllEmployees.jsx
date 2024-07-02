@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
+// no need form bcoz we are not taking any input from the user
 export const GetAllEmployees = () => {
-    const [employees,setEmployess] = useState([])  //array of objects
+    const [employees,setEmployees] = useState([])  //array of objects
     const fetchOperation = ()=> {
         fetch(`http://localhost:8080/api/v1/employees`)
         .then(response=>response.json())
-        .then(responseData=>setEmployess(responseData))
+        .then(responseData=>setEmployees(responseData))
     }
   return (
     <>

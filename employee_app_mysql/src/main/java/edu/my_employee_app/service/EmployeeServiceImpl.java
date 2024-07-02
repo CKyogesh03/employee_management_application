@@ -31,7 +31,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployeeById(int id) {
-        Optional<EmployeeEntity> optionalEmployeeEntity= employeeRepository.findById(id);
+        Optional<EmployeeEntity> optionalEmployeeEntity= employeeRepository.findById(id);  //we can use get() here
         EmployeeEntity employeeEntity=optionalEmployeeEntity.get();
         Employee employee=new Employee(); // allocating memory
         BeanUtils.copyProperties(employeeEntity,employee); //return type of copyProperties(s,t) is void

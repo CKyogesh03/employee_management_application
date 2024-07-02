@@ -14,9 +14,6 @@ public interface EmployeeRepository extends JpaRepository<EmployeeEntity,Integer
 
     // dynamic findBy method concept
     public EmployeeEntity findByFirstName(String firstName);
-
-    // check with Optional type using findBy dynamic query
-
     
     //using JPQL query
     @Query("select e from EmployeeEntity e where e.firstName=:firstName")
